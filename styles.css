@@ -1,0 +1,399 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+body{
+
+    background-color: #ADC5CF
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   
+}
+
+
+main {
+
+   width: 100%;
+   height: 90%;
+    display: flex;   /*coloca en el mismo eje cada elemento html*/
+    justify-content: space-between;
+}
+
+
+section{
+
+   
+    height: 100%;
+    
+}
+
+.seccion1{
+
+    width:70%;
+    display: block; /*ocupa el 100%*/
+margin: auto;
+
+}
+
+.area{
+
+width: 100%;
+height: 55%;
+margin-top: 25px; /*1.25rem*/
+resize: none;  /*saca el efecto del texarea*/
+font-size: 25px;
+background-color: transparent;
+border-color: #0A3871;
+
+/*caret-color: red; color de la barra del cursos*/
+
+}
+
+.exclamacion{
+    
+    height:14px;
+    color:#fff;
+    margin-right:10px;
+    margin-top:6px;
+    
+}
+
+.condiciones{
+
+   color:#495057;
+   font-size:18px;
+  
+}
+
+.botones{
+    text-align: center;/*al ser en bloque se centra*/
+    margin-top: 100px;   
+}
+
+.encriptar,.desencriptar,.recargar {
+    
+    border-radius: 24px;
+    height: 67px;
+    width:25%;
+    color: #fff;
+    background-color:#0A3871;
+    transition: 0.5s all;
+    cursor:pointer;
+   
+}
+
+.desencriptar{
+
+    background-color:#D8DFE8;
+    color:#0A3871;
+}
+
+.recargar{
+
+ background-color: #B0A8B9;
+ 
+
+}
+
+.encriptar:hover {
+
+    background: #008E9B;
+    transform: scale(0.9);
+
+}
+
+.desencriptar:hover {
+
+    background: #008F7A;
+    transform: scale(0.9);
+    color: #fff;
+}
+
+.recargar:hover {
+
+    background: #4B4453;
+    transform: scale(0.9);
+    
+
+}
+
+.seccion2{
+
+    width:20%;
+    height: 90%;
+    border-radius: 32px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #fff;
+
+}
+
+.contenedor-munieco{
+
+    width:100%;
+    height:60%;
+    padding-top: 50px;
+    box-sizing: border-box;
+    overflow: hidden;
+   
+}
+
+.mune{
+
+    width: 280px;
+    
+}
+
+.contenedor-h3{
+
+    width:100%;
+    height:20%;
+    text-align:center;
+
+}
+
+.contenedor-parrafo{
+
+    width:100%;
+    height:20%;
+    text-align:center;
+}
+
+.contenedor-resultado{
+
+width:100%;
+height:70%;
+padding:25px;
+box-sizing: border-box; /*para q no afecte a otros elementos*/
+
+}
+
+.texto-resultado{
+
+    width: 80%;
+height: 70%;
+display: block; /*ocupa el 100%*/
+margin: auto;
+margin-top: 20px; /*1.25rem*/
+resize: none;  /*saca el efecto del texarea*/
+font-size: 20px;
+
+}
+
+.copiar{
+  border-radius: 24px;
+  height: 67px;
+  width: 50%;
+  height: 40px;
+  display:block;
+  margin: auto;
+  color: #fff;
+  background-color:#0A3871;
+  transition: 0.5s all;
+  cursor:pointer;
+
+ 
+}
+
+.copiar:hover {
+
+    background: #008E9B;
+    transform: scale(0.9);
+
+}
+
+.mostrar{
+
+    text-align: center;
+    color:#0A3871;
+    margin-top:2px;
+}
+
+
+.ocultar{
+
+    display:none;
+}
+
+footer{
+
+width: 100%;
+height: 50px;
+text-align:center;
+margin-top: 15px;
+color:#0A3871;
+
+}
+
+
+/*responsive--------------------------------------------------------*/
+
+@media (max-width: 768px) { /*tamaño maximo*/
+
+
+    main {
+       
+         flex-direction: column;   /*coloca en el mismo eje cada elemento html*/
+         
+     }
+     
+     header {
+
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    
+    .seccion1{
+    
+        display: block;
+        width:80%;
+        margin: auto;
+
+    
+    }
+    
+    .area{
+    
+    width: 100%;
+    font-size: 20px;
+    
+    }
+    
+    
+    .seccion2{
+    
+        display:block;
+        margin: auto;
+        width:80%;
+        height:35%
+       
+
+    }
+
+    .contenedor-munieco{
+    
+        display: none;
+
+    }
+    
+    .contenedor-h3{
+    
+       
+        height:50%;
+        
+    
+    }
+    
+    .contenedor-parrafo{
+    
+       
+        height:50%;
+     
+        
+    }
+
+    .botones{
+
+        margin-top:40px;
+    }
+
+
+    .copiar{
+        border-radius: 24px;
+        height: 26px;
+        width: 25%;
+        margin-top:4px;
+      
+      }
+
+      .mostrar{
+        
+       margin-top:0px;
+       font-size: 12px;
+    }
+    
+     
+    
+    }
+
+    /*alineacion logo de Alura y botones*/
+    
+    @media (max-width: 576px) {
+
+
+       .botones{
+
+         margin-top:20px;
+
+       }
+       
+
+        .encriptar,.desencriptar,.recargar {
+    
+            display: block;
+            width:80%;
+            margin: auto;
+            margin-bottom: 5px;
+            height: 28px;
+           
+        
+        }
+
+        .copiar{
+             
+           height: 24px;
+           margin-top: 3px;
+        }
+
+
+        
+        }
+        
+        /*tamaño muñeco*/
+
+     @media (max-width: 1248px) {
+
+
+    .mune {
+
+        width: 240px;
+    }
+
+
+     }
+     
+   
+     @media (max-width: 1090px) {
+
+
+        .mune {
+    
+            width: 200px;
+        }
+    
+    
+         }
+         
+     @media (max-width: 890px) {
+
+
+            .mune {
+        
+                width: 170px;
+            }
+        
+        
+             }
+             
+
+
+
+
+
